@@ -1,0 +1,19 @@
+package com.main.app;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+@SpringBootApplication
+public class QrCodeGenearatorAppApplication extends SpringBootServletInitializer {
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(QrCodeGenearatorAppApplication.class);
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(QrCodeGenearatorAppApplication.class, args);
+	}
+
+}
